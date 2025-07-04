@@ -1,3 +1,6 @@
+type Props = {
+  affiliateTags: { amazon: string; walmart: string };
+};
 import React, { useState } from 'react';
 import { createSite } from '../services/siteService';
 
@@ -40,4 +43,4 @@ const SiteBuilder: React.FC = () => {
   );
 };
 
-export default SiteBuilder;
+export default function SiteBuilder({ affiliateTags }: Props)
