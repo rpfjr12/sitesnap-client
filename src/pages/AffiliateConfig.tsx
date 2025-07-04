@@ -1,3 +1,6 @@
+type Props = {
+  onConfigUpdate: (tags: { amazon?: string; walmart?: string }) => void;
+};
 import React, { useState } from 'react';
 
 const AffiliateConfig: React.FC = () => {
@@ -39,4 +42,4 @@ const AffiliateConfig: React.FC = () => {
   );
 };
 
-export default AffiliateConfig;
+export default function AffiliateConfig({ onConfigUpdate }: Props)
